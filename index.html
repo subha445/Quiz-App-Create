@@ -1,22 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="quiz-box">
+  <div class="container">
+    <h1>Quiz App</h1>
+    <p>Test your knowledge!</p>
+    
     <div id="menu">
-      <h2>Select Category</h2>
       <button onclick="startQuiz('python')">Python</button>
-      <button onclick="startQuiz('gk')">GK</button>
+      <button onclick="startQuiz('gk')">General Knowledge</button>
       <button onclick="startQuiz('cinema')">Cinema</button>
+      <button onclick="startQuiz('science')">Science</button>
+      <button onclick="startQuiz('math')">Math</button>
+      <button onclick="startQuiz('computer')">Computer</button>
     </div>
-    <div id="quiz" style="display:none">
-      <h2 id="question"></h2>
+
+    <div id="quiz" style="display:none;">
+      <div id="score">Score: 0</div>
+      <div id="timer">Time: 30s</div>
+      <div id="question"></div>
       <div id="options"></div>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
