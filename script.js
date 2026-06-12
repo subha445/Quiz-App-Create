@@ -1,32 +1,32 @@
 const quizData = {
   python: [
-    {q:"How do you print text in Python?",options:["echo()","print()","cout","printf"],ans:"print()"},
-    {q:"Which keyword defines a function?",options:["func","def","function","define"],ans:"def"}
+    { q: "How do you print text in Python?", options: ["echo()", "print()", "cout", "printf"], ans: "print()" },
+    { q: "Which keyword defines a function?", options: ["func", "def", "function", "define"], ans: "def" }
   ],
 
   gk: [
-    {q:"Capital of India?",options:["Mumbai","Delhi","Kolkata","Chennai"],ans:"Delhi"},
-    {q:"Largest planet?",options:["Earth","Mars","Jupiter","Saturn"],ans:"Jupiter"}
+    { q: "Capital of India?", options: ["Mumbai", "Delhi", "Kolkata", "Chennai"], ans: "Delhi" },
+    { q: "Largest planet?", options: ["Earth", "Mars", "Jupiter", "Saturn"], ans: "Jupiter" }
   ],
 
   cinema: [
-    {q:"Who directed Baahubali?",options:["Shankar","Rajini","SSR","Lokesh"],ans:"SSR"},
-    {q:"Which film has song Naatu Naatu?",options:["RRR","Pushpa","KGF","Leo"],ans:"RRR"}
+    { q: "Who directed Baahubali?", options: ["Shankar", "Rajini", "SSR", "Lokesh"], ans: "SSR" },
+    { q: "Which film has song Naatu Naatu?", options: ["RRR", "Pushpa", "KGF", "Leo"], ans: "RRR" }
   ],
 
   science: [
-    {q:"H2O is?",options:["Oxygen","Water","Hydrogen","Salt"],ans:"Water"},
-    {q:"Planet known as Red Planet?",options:["Earth","Mars","Venus","Jupiter"],ans:"Mars"}
+    { q: "H2O is?", options: ["Oxygen", "Water", "Hydrogen", "Salt"], ans: "Water" },
+    { q: "Planet known as Red Planet?", options: ["Earth", "Mars", "Venus", "Jupiter"], ans: "Mars" }
   ],
 
   math: [
-    {q:"5 × 6 = ?",options:["30","25","35","40"],ans:"30"},
-    {q:"Square root of 81?",options:["7","8","9","10"],ans:"9"}
+    { q: "5 × 6 = ?", options: ["30", "25", "35", "40"], ans: "30" },
+    { q: "Square root of 81?", options: ["7", "8", "9", "10"], ans: "9" }
   ],
 
   computer: [
-    {q:"CPU stands for?",options:["Central Processing Unit","Computer Power Unit","Control Program Unit","Central Program Utility"],ans:"Central Processing Unit"},
-    {q:"Brain of computer?",options:["Monitor","CPU","Keyboard","Mouse"],ans:"CPU"}
+    { q: "CPU stands for?", options: ["Central Processing Unit", "Computer Power Unit", "Control Program Unit", "Central Program Utility"], ans: "Central Processing Unit" },
+    { q: "Brain of computer?", options: ["Monitor", "CPU", "Keyboard", "Mouse"], ans: "CPU" }
   ]
 };
 
@@ -58,7 +58,6 @@ function showQuestion() {
   resetTimer();
 
   const q = currentQuestions[currentQuestion];
-
   document.getElementById("question").innerText = q.q;
 
   let html = "";
@@ -90,9 +89,28 @@ function resetTimer() {
   timer = setInterval(() => {
     timeLeft--;
 
-    document.getElementById("timer").innerText =
-      "Time: " + timeLeft + "s";
+    document.getElementById("timer").innerText = "Time: " + timeLeft + "s";
 
     if (timeLeft <= 0) {
       clearInterval(timer);
-      currentQuestion
+      currentQuestion++;
+      showQuestion();
+    }
+  }, 1000);
+}
+
+function endQuiz() {
+  clearInterval(timer);
+
+  document.getElementById("question").innerHTML =
+    `<h2>Quiz Finished!</h2>
+     <h3>Your Score: ${score}/${currentQuestions.length}</h3>
+     <button onclick="restartQuiz()">Restart Quiz</button>`;
+
+  document.getElementById("options").innerHTML = "";
+}
+
+function restartQuiz() {
+  document.getElementById("menu").style.display = "block";
+  document.getElementById("quiz").style.display = "none";
+}
