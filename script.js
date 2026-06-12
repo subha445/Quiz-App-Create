@@ -12,18 +12,4 @@ const quizData = {
     {q: "How to convert string to int?", options: ["int()", "str()", "float()", "num()"], ans: "int()"}
   ],
   gk: [
-    {q: "Capital of India?", options: ["Mumbai", "Delhi", "Kolkata", "Chennai"], ans: "Delhi"},
-    {q: "Largest planet?", options: ["Earth", "Mars", "Jupiter", "Saturn"], ans: "Jupiter"},
-    {q: "National animal of India?", options: ["Lion", "Tiger", "Elephant", "Deer"], ans: "Tiger"},
-    {q: "Currency of Japan?", options: ["Yuan", "Won", "Yen", "Ringgit"], ans: "Yen"},
-    {q: "Taj Mahal built by?", options: ["Akbar", "Shah Jahan", "Aurangzeb", "Babur"], ans: "Shah Jahan"},
-    {q: "Longest river in India?", options: ["Godavari", "Ganga", "Yamuna", "Brahmaputra"], ans: "Ganga"},
-    {q: "First PM of India?", options: ["Nehru", "Gandhi", "Patel", "Azad"], ans: "Nehru"},
-    {q: "How many states in India?", options: ["27", "28", "29", "30"], ans: "28"},
-    {q: "Mount Everest in which country?", options: ["India", "China", "Nepal", "Bhutan"], ans: "Nepal"},
-    {q: "National sport of India?", options: ["Cricket", "Hockey", "Kabaddi", "Football"], ans: "Hockey"}
-  ],
-  cinema: [
-    {q: "Who directed Baahubali?", options: ["Shankar", "Rajini", "SSR", "Lokesh"], ans: "SSR"},
-    {q: "What is Kollywood?", options: ["Hindi", "Tamil", "Telugu", "Malayalam"], ans: "Tamil"},
-    {q
+    {q: "Capital of India?", options: ["Mumbai", "Delhi", "Kolk
