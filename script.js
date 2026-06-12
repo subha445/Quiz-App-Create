@@ -31,21 +31,4 @@ const quizData = {
     {q: "Oscars won by Indian film?", options: ["Lagaan", "RRR", "Slumdog", "Gandhi"], ans: "Slumdog"},
     {q: "Director of Vikram movie?", options: ["Lokesh", "Atlee", "Nelson", "Mani Ratnam"], ans: "Lokesh"},
     {q: "National Award most times actress?", options: ["Sridevi", "Nayanthara", "Kangana", "Vidya Balan"], ans: "Kangana"},
-    {q: "Which film has song Naatu Naatu?", options: ["Pushpa", "RRR", "KGF", "Bahubali"], ans: "RRR"},
-    {q: "A.R Rahman famous for?", options: ["Acting", "Dance", "Music", "Direction"], ans: "Music"},
-    {q: "First 100 crore Tamil film?", options: ["Sivaji", "Enthiran", "Ghilli", "Padayappa"], ans: "Sivaji"}
-  ],
-  science: [
-    {q: "Chemical symbol of water?", options: ["H2O", "CO2", "NaCl", "O2"], ans: "H2O"},
-    {q: "Planet called Red Planet?", options: ["Venus", "Mars", "Jupiter", "Mercury"], ans: "Mars"},
-    {q: "Human body has how many bones?", options: ["206", "300", "150", "250"], ans: "206"},
-    {q: "Speed of light?", options: ["3x10^8 m/s", "3x10^6 m/s", "3x10^5 m/s", "3x10^7 m/s"], ans: "3x10^8 m/s"},
-    {q: "Unit of electric current?", options: ["Volt", "Ampere", "Watt", "Ohm"], ans: "Ampere"},
-    {q: "Photosynthesis happens in?", options: ["Root", "Stem", "Leaf", "Flower"], ans: "Leaf"},
-    {q: "Largest organ in human body?", options: ["Heart", "Liver", "Skin", "Brain"], ans: "Skin"},
-    {q: "Acid in lemon?", options: ["Hydrochloric", "Citric", "Sulfuric", "Nitric"], ans: "Citric"},
-    {q: "Earth rotates on its?", options: ["Axis", "Orbit", "Core", "Surface"], ans: "Axis"},
-    {q: "Force that pulls objects down?", options: ["Friction", "Gravity", "Magnetism", "Tension"], ans: "Gravity"}
-  ],
-  math: [
-    {q: "Value of Pi up to 2 decimals?", options: ["3.12", "3.14", "3.16", "3.18"], ans: "
+    {q: "Which film has song Naatu Naatu?", options
